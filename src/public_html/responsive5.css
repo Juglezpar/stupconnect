@@ -1,0 +1,262 @@
+/* ========== Estilos Responsive ========== */
+
+/* Dispositivos pequeños (menos de 576px) */
+@media (max-width: 569px) {
+  /* Header */
+  .containerHeader {
+    padding: 10px;
+  }
+
+  .google {
+    max-height: 14px;
+    margin-right: -2px !important;
+  }
+  .google-login-btn {
+    font-size: 11px;
+    margin-right: 1px;
+    padding: 2px 2px 2px 2px;
+    bottom: -2px;
+  }
+  .header-center {
+    left: 48%;
+  }
+  .WEBName {
+    font-size: 10px;
+    margin-left: -17px;
+  }
+  .header-left {
+    margin-left: 0px;
+  }
+  .header-left .AboutUs {
+    font-size: 11px;
+    padding: 5px;
+    margin-top: 2px;
+  }
+  .buttons {
+    position: absolute;
+    right: 2px;
+    top: 0.5rem;
+  }
+  .bi-info-circle {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 3px;
+  }
+  .PostSt {
+    font-size: 7px;
+    padding: 2px 2px;
+    margin: 0px 0px -7px 0px;
+  }
+  .profile {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  /* Filtros */
+  .filter-form {
+    gap: 5px;
+    padding: 5px;
+  }
+  .filter-form .form-label {
+    font-size: 14px;
+  }
+  .filter-form select.form-control {
+    font-size: 12px;
+  }
+  .filter-form button.btn-primary {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  #clearFilters {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .row > * {
+    width: 33%;
+  }
+
+  /* Cajas de startups */
+  .column h2 {
+    font-size: 19px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .column h3 {
+    font-size: 19px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .clock-icon {
+    width: 22px;
+  }
+  .fire-icon {
+    width: 32px;
+  }
+  .two-columns {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .column {
+    width: 100%;
+  }
+  .Box {
+    width: 103%;
+    padding: 5px;
+  }
+  .bt {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+  .STname {
+    font-size: 0.75rem;
+  }
+
+  /* Footer */
+  .Social-Net {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .social {
+    font-size: 20px;
+    margin: 5px 10px;
+  }
+}
+@media (min-width: 570px) and (max-width: 720px) {
+  /* Header */
+  .google {
+    max-height: 24px;
+    margin-right: -2px !important;
+  }
+  .google-login-btn {
+    font-size: 17px;
+    margin-right: 1px;
+    padding: 4px 4px 4px 4px;
+    bottom: -17px;
+  }
+  .column h2 {
+    font-size: 35px;
+  }
+  .column h3 {
+    font-size: 35px;
+  }
+  .header-left {
+    flex: 0 0 auto;
+    margin-left: 0px;
+  }
+  .bi-info-circle {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 18px;
+  }
+  .AboutUs {
+    font-size: 18px;
+    margin-top: 0px;
+  }
+  .WEBName {
+    font-size: 17px;
+    margin-left: -78px;
+  }
+
+  .buttons {
+    right: 10px;
+    top: 5px;
+  }
+  .PostSt {
+    font-size: 14px;
+    padding: 2px 2px;
+    margin: 3px 0px -30px 5px;
+  }
+  .profile {
+    font-size: 33px;
+    padding: 9px;
+  }
+}
+@media (min-width: 720px) and (max-width: 979px) {
+  .google {
+    max-height: 24px;
+    margin-right: -2px !important;
+  }
+  .google-login-btn {
+    font-size: 20px;
+    margin-right: 1px;
+    padding: 4px 4px 4px 4px;
+    bottom: -12px;
+  }
+  .column h2 {
+    font-size: 40px;
+  }
+  .column h3 {
+    font-size: 40px;
+  }
+  .header-left {
+    flex: 0 0 auto;
+    margin-left: 0px;
+  }
+  .bi-info-circle {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 20px;
+  }
+  .AboutUs {
+    font-size: 20px;
+  }
+  .WEBName {
+    font-size: 20px;
+    margin-left: -68px;
+  }
+
+  .buttons {
+    right: 12px;
+  }
+  .PostSt {
+    font-size: 14px;
+    padding: 2px 2px;
+    margin: 3px 0px -16px 5px;
+  }
+  .profile {
+    font-size: 33px;
+    padding: 9px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1242px) {
+  .google {
+    max-height: 28px;
+    margin-right: -2px !important;
+  }
+  .google-login-btn {
+    font-size: 21px;
+    margin-right: 1px;
+    padding: 4px 4px 4px 4px;
+    bottom: -20px;
+  }
+  .header-left {
+    flex: 0 0 auto;
+    margin-left: 0px;
+  }
+  .bi-info-circle {
+    margin-left: 4px;
+    margin-right: 0px;
+    font-size: 30px;
+  }
+  .AboutUs {
+    font-size: 31px;
+  }
+  .WEBName {
+    font-size: 31px;
+    margin-left: 5px;
+  }
+
+  .buttons {
+    right: 12px;
+  }
+  .PostSt {
+    font-size: 16px;
+    padding: 2px 2px;
+    margin: 3px 0px -33px 5px;
+  }
+
+  .profile {
+    font-size: 42px;
+  }
+}

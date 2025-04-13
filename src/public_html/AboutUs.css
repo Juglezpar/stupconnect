@@ -1,0 +1,97 @@
+/* AboutUs.css */
+
+/* Estilo general de la página About Us */
+body {
+  background-color: #d2dfee; /* Fondo claro similar al estilo general */
+  color: #020533; /* Color de texto oscuro para buen contraste */
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal del contenido About Us */
+.about-us {
+  max-width: 900px;
+  margin: 80px auto 80px auto; /* Espacio superior para no tapar el header, inferior para el footer */
+  padding: 20px;
+  background: #ffffff; /* Fondo blanco para el contenido */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titulares generales */
+.about-us h1,
+.about-us h2 {
+  position: relative;
+  font-family: "Goblin One", sans-serif;
+  color: #020533;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Estilos para párrafos */
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+/* Espaciado entre secciones */
+.Platform-Description,
+.My-Description,
+.Offer,
+.Our-Vision,
+.Join-Us {
+  margin-bottom: 30px;
+}
+
+/* Estilos para la lista de "What We Offer" */
+.Offer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Offer li {
+  color: #333333;
+  font-size: 18px;
+  margin: 10px 0;
+  padding-left: 30px;
+  position: relative;
+}
+
+/* Personalización del viñete para cada item */
+.Offer li::before {
+  content: "•";
+  color: #f03c36;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+.created-by {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  color: #000000; /* Un gris suave para que sea discreto */
+}
+
+/* Adaptaciones para dispositivos móviles */
+@media (max-width: 768px) {
+  .about-us {
+    margin: 120px 10px 60px 10px;
+    padding: 15px;
+  }
+
+  .about-us h1,
+  .about-us h2 {
+    font-size: 28px;
+  }
+
+  .about-us p,
+  .Offer li {
+    font-size: 16px;
+  }
+}

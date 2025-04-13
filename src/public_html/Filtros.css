@@ -1,0 +1,82 @@
+/* Estilos para el formulario de filtros */
+.mt-4 {
+  position: sticky;
+  top: 0px;
+  z-index: 950;
+}
+.filter-form {
+  background: #ddeafa; /* Fondo semitransparente */
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.466);
+  margin-bottom: 20px;
+}
+
+/* Etiquetas del formulario */
+.filter-form .form-label {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Estilos para los select y el input */
+.filter-form .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgb(10, 29, 117);
+  color: #000000;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+/* Al hacer foco en los campos */
+.filter-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #000000;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+/* Personalización de los select para que tengan una flecha custom */
+.filter-form select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  color: #000000;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+}
+
+/* Estilo para el botón de filtro */
+.filter-form button.btn-primary {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  background: #f03c36;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.filter-form button.btn-primary:hover {
+  background: #801d1d;
+}
+
+#clearFilters {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  background: #050b5c;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+#clearFilters:hover {
+  background: #00010f;
+}

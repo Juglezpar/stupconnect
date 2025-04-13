@@ -1,0 +1,170 @@
+/*Aquí van los estilos relativos a las cosas espécificas de esta sub pagina,los estilos para el header ya estan definidos para otro css*/
+/* Profile.css */
+
+/* Contenedor principal del perfil */
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto; /* Centrar en la página */
+  padding: 20px;
+  background-color: #e6e6ee; /* Fondo blanco */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el contenedor */
+  border-radius: 10px;
+}
+
+/* Encabezado del perfil */
+.profile-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Imagen de perfil del usuario */
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 4px solid #020533;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Nombre del usuario */
+.profile-name {
+  font-size: 1.8em;
+  color: #09104e;
+  margin: 0;
+}
+
+/* Detalles adicionales del perfil */
+.profile-details {
+  /* font-family: 'Nunito'; */
+}
+/*Upper columns distributuion*/
+.upperColums {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Cada sección de detalle del perfil */
+.detail {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.StContainer {
+  padding: 22px 35px 5px 35px;
+  margin: 35px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Título de cada detalle */
+.profile-details h3 {
+  font-size: 1.5em;
+  color: #020533;
+  margin-bottom: 5px;
+  font-family: "Nunito";
+}
+
+/* Texto de cada detalle */
+.profile-details p {
+  font-size: 1em;
+  color: #333333;
+  margin: 0;
+}
+
+#St_button {
+  position: relative;
+  background-color: #020533;
+  border: none;
+  margin: 27px 0px 10px 4px;
+  font-weight: bold;
+  width: 100%;
+  padding: 35px 400px 40px 20px;
+  font-size: 28px;
+}
+/* El título principal dentro del botón */
+.button-title {
+  /* Podrías personalizar color, font-weight, etc. */
+}
+
+/* Fecha de creación en la esquina superior derecha */
+.button-date {
+  position: absolute;
+  top: 5px; /* separa del borde superior del botón */
+  right: 10px; /* separa del borde derecho del botón */
+  font-size: 14px;
+  color: #fff; /* mismo color o un tono más claro, p.ej. #ffffffcc */
+  /* Podrías añadir font-weight: normal; para que sea más discreto */
+}
+.collapse-horizontal {
+  margin: 15px;
+}
+#CardInfo {
+  height: 300px; /* Fijará la altura en 300px */
+  padding: 20px;
+  overflow-y: auto; /* Agrega scroll vertical si hay contenido extra */
+}
+/* Para el nombre de la startup */
+.stName {
+  font-family: "Oswald", sans-serif; /* O 'Roboto Slab', según tu elección */
+  font-size: 28px;
+  color: #141414;
+}
+
+/* Para la descripción */
+.stDescr {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #141414;
+}
+.form-label {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #141414;
+}
+.modal {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #141414;
+}
+
+.toast {
+  font-family: "Nunito", sans-serif;
+  font-size: 26px; /* Tamaño de fuente mayor */
+  font-weight: 700; /* Fuente más negrita */
+  padding: 12px; /* Más espacio interno */
+  min-width: 300px; /* Puedes ajustar el ancho mínimo si lo deseas */
+}
+
+.toast .toast-body {
+  font-size: 18px; /* Aumenta el tamaño de fuente en el cuerpo del Toast */
+  padding: 7px 12px; /* Ajusta el padding para que se vea más espacioso */
+}
+.toast-container {
+  position: fixed;
+  bottom: 70px; /* Ajusta este valor según lo alto que quieras que aparezca */
+  right: 20px;
+  z-index: 1050;
+}
+#successToast {
+  background-color: #00b418;
+  color: #ffffff;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .profile-details {
+    grid-template-columns: 1fr; /* Un detalle por fila en pantallas pequeñas */
+  }
+
+  .profile-container {
+    padding: 15px;
+  }
+}

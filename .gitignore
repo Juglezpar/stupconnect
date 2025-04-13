@@ -133,6 +133,7 @@ dist
 # Dependencias instaladas por Composer (Excluye también dependencias para GoogleAuth)
 /vendor/
 composer.lock
+composer.json
 
 # -----------------------------
 # Archivos de configuración de IDEs y editores

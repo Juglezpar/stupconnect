@@ -1,0 +1,231 @@
+/* General */
+body {
+  background-color: #d2dfee;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.containerHeader {
+  position: relative; /* Para posicionar elementos absolutamente dentro */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 10px 20px;
+}
+
+.Description {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Goblin One", sans-serif;
+  margin: 145px 30px 120px;
+  text-align: center;
+}
+
+/* --- Contenedor de columnas --- */
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0px 20px 20px 20px;
+}
+
+.column {
+  flex: 1 1 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.column h2 {
+  font-family: "Oswald", serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #af0e0e;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  text-decoration: solid;
+}
+.fire-icon {
+  width: 50px;
+  vertical-align: baseline;
+}
+
+.column h3 {
+  font-family: "Oswald", serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #042041;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-decoration: solid;
+}
+.clock-icon {
+  width: 40px;
+  vertical-align: bottom;
+  margin-left: 8px;
+}
+/* --- Cajas de startups --- */
+/* Estado colapsado: se muestra el nombre, joining reward y sector */
+.Box {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: max-height 0.5s ease, transform 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  max-height: 120px; /* Altura suficiente para mostrar la parte visible */
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Estado expandido */
+.Box.expanded {
+  max-height: 300px; /* Altura ampliada para mostrar información extra */
+  transform: scale(1.02);
+}
+
+/* Parte siempre visible: nombre y detalles básicos */
+.STname {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.visible-details {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #ecf0f1; /* Color claro para contraste en fondos oscuros */
+}
+
+.visible-details .bt {
+  margin: 3px 0;
+}
+
+/* Contenedor de información extra (oculto por defecto) */
+.extra-details {
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.Box.expanded .extra-details {
+  opacity: 1;
+}
+
+/* --- Estilos para cajas según categoría --- */
+/* Cajas populares: degradado azul */
+.Box.popular {
+  background: linear-gradient(1deg, #801d1d 0%, #f03c36 70%);
+  color: #ffffff;
+}
+
+/* Cajas nuevas: degradado verde */
+.Box.new {
+  background: linear-gradient(1deg, #9194af 0%, #202669 100%);
+  color: #ffffff;
+}
+/* Cuando la caja está expandida, se establece una altura fija y se usa flex para distribuir el espacio */
+.Box.expanded {
+  height: 300px; /* Altura fija para la caja expandida */
+  transform: scale(1.02);
+  overflow: hidden; /* Evita que el contenido sobresalga del contenedor */
+  display: flex;
+  flex-direction: column;
+}
+
+/* La sección visible se mantiene con su tamaño natural */
+.Box.expanded .visible-details {
+  flex: 0 0 auto;
+}
+
+/* La sección de extra-details ocupa el espacio restante y, si su contenido es muy grande, se vuelve scrollable */
+.Box.expanded .extra-details {
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+/* Detalles internos */
+.bt {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+/* Botón Apply */
+.Apply {
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.Apply:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+/*Estilos para el modal*/
+.modal {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: #141414;
+}
+#CancelBtn {
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 19px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#CancelBtn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+#confirmApplyBtn {
+  background-color: #00c01a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 19px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#confirmApplyBtn:hover {
+  background-color: #187a00;
+  transform: scale(1.05);
+}
+/* Aumentar el tamaño del Toast */
+.toast {
+  font-family: "Nunito", sans-serif;
+  font-size: 26px; /* Tamaño de fuente mayor */
+  font-weight: 700; /* Fuente más negrita */
+  padding: 12px; /* Más espacio interno */
+  min-width: 300px; /* Puedes ajustar el ancho mínimo si lo deseas */
+}
+
+.toast .toast-body {
+  font-size: 18px; /* Aumenta el tamaño de fuente en el cuerpo del Toast */
+  padding: 7px 12px; /* Ajusta el padding para que se vea más espacioso */
+}
+.toast-container {
+  position: fixed;
+  bottom: 70px; /* Ajusta este valor según lo alto que quieras que aparezca */
+  right: 20px;
+  z-index: 1050;
+}
+#successToast {
+  background-color: #00b418;
+  color: #ffffff;
+}

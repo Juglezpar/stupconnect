@@ -1,0 +1,193 @@
+/* ========== Estilos Responsive ========== */
+
+/* Dispositivos pequeños (menos de 576px) */
+@media (max-width: 575.98px) {
+  /* Header */
+  .containerHeader {
+    padding: 10px;
+  }
+
+  .google {
+    max-height: 14px;
+    margin-right: -2px !important;
+  }
+  .google-login-btn {
+    font-size: 8px;
+    margin-right: 1px;
+    padding: 2px 2px 2px 2px;
+    bottom: 0px;
+  }
+  .header-center {
+    left: 48%;
+  }
+  .WEBName {
+    font-size: 11px;
+    margin-left: 0px;
+  }
+  .header-left {
+    margin-left: 0px;
+  }
+  .header-left .AboutUs {
+    font-size: 11px;
+    padding: 5px;
+    margin-top: 2px;
+  }
+  .buttons {
+    position: absolute;
+    right: 0px;
+    top: 0.5rem;
+  }
+  .bi-info-circle {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 3px;
+  }
+  .PostSt {
+    font-size: 8px;
+    padding: 2px 4px;
+    margin: 0px 0px 4px 0px;
+  }
+  .profile {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  /* Filtros */
+  .filter-form {
+    gap: 5px;
+    padding: 5px;
+  }
+  .filter-form .form-label {
+    font-size: 14px;
+  }
+  .filter-form select.form-control {
+    font-size: 12px;
+  }
+  .filter-form button.btn-primary {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  #clearFilters {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .row > * {
+    width: 33%;
+  }
+
+  /* Cajas de startups */
+  .column h2 {
+    font-size: 19px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .column h3 {
+    font-size: 19px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .clock-icon {
+    width: 22px;
+  }
+  .fire-icon {
+    width: 32px;
+  }
+  .two-columns {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .column {
+    width: 100%;
+  }
+  .Box {
+    width: 103%;
+    padding: 5px;
+  }
+  .bt {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+  .STname {
+    font-size: 0.75rem;
+  }
+
+  /* Footer */
+  .Social-Net {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .social {
+    font-size: 20px;
+    margin: 5px 10px;
+  }
+}
+@media (min-width: 630px) and (max-width: 979px) {
+  .column h2 {
+    font-size: 40px;
+  }
+  .column h3 {
+    font-size: 40px;
+  }
+  .header-left {
+    flex: 0 0 auto;
+    margin-left: 0px;
+  }
+  .bi-info-circle {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 20px;
+  }
+  .AboutUs {
+    font-size: 20px;
+  }
+  .WEBName {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .buttons {
+    right: 2px;
+  }
+  .PostSt {
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 7px;
+    margin: 2px 0px 10px;
+  }
+  .profile {
+    font-size: 33px;
+    padding: 9px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1242px) {
+  .header-left {
+    flex: 0 0 auto;
+    margin-left: 0px;
+  }
+  .bi-info-circle {
+    margin-left: 4px;
+    margin-right: 0px;
+    font-size: 30px;
+  }
+  .AboutUs {
+    font-size: 31px;
+  }
+  .WEBName {
+    font-size: 31px;
+    margin-left: 5px;
+  }
+
+  .buttons {
+    right: 0px;
+  }
+  .PostSt {
+    font-size: 21px;
+    border-radius: 5px;
+    padding: 9px 10px;
+    margin: 2px 0px 25px;
+  }
+  .profile {
+    font-size: 42px;
+  }
+}

@@ -1,0 +1,220 @@
+body {
+    background-color: #6a966c;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+
+.head{
+  display: flex;
+  /* align-items:center; */
+  justify-content: space-between;
+  padding: 15px 0px 20px; /* Espaciado interno */
+  position: relative;
+  background-image: url('../../img/cabecera/Cabecera4.jpg'); /* Reemplaza con la ruta de tu imagen */
+  background-size:cover; /* Escala la imagen para cubrir toda el área de la cabecera */
+  
+  background-position: center; /* Centra la imagen en el contenedor */
+   
+}
+
+.container-head {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column; /* Coloca el título y la descripción en columna */
+  align-items: center; /* Centra el título y la descripción dentro de la columna */
+}
+
+.WEBName {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Goblin One', sans-serif;
+  margin: 0;
+}
+
+.Description {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'Goblin One', sans-serif;
+  /* line-height: 1.4; */
+  margin: 145px 30px 120px; /* Espacio entre el título y la descripción */
+  text-align: center; /* Centra el texto */
+}
+
+.buttons {
+  display: flex;
+  gap: 22px; /* Espacio entre botones */
+  position: absolute;
+  right: 20px; /* Alinea los botones a la derecha */
+  top: 20px;
+}
+
+.google-login-btn, .PostSt {
+  font-size: 18px;
+  font-family: 'Goblin One', sans-serif;
+  border-radius: 5px; /* Bordes redondeados para un mejor diseño */
+  padding: 12px 22px;
+ 
+}
+.google-login-btn{
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #4285F4; /* Color característico de Google */
+  padding: 12px 22px 10px 11px;
+}
+.PostSt{
+  background-color: #3a925f;
+  color: #ffffff;
+}
+
+.google-login-btn:hover {
+  background-color: #dbdbdb; /* Cambia el color de fondo en hover */
+  color: #4285F4; /* Cambia el color del texto */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+.PostSt:hover {
+  background-color: #1b2c641c; /* Cambia el color de fondo en hover */
+  color: #ebcd48;
+  transform: scale(1.02); /* Aumenta ligeramente el tamaño del botón */
+}
+
+/* Estilos para las cajas */
+.BoxesSpace {
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Box {
+  background: linear-gradient(135deg, #d8dfe7 0%, #a3d6bc 100%); /* Fondo en degradado */
+  color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 460px; /* Ajuste de ancho */
+  min-height: 360px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Box:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4); /* Sombra más fuerte al pasar el cursor */
+}
+
+.STname {
+  font-size: 40px;
+  font-weight: bold;
+  color: #292c28; /* Color de título llamativo */
+  margin-bottom: 15px;
+}
+
+.bt {
+  font-size: 22px;
+  color: #292c28;
+  margin: 5px 0;
+}
+
+.Box p {
+  margin: 10px 0;
+}
+
+.Apply {
+  background-color: #f12222;
+  color: #ffffff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px; /* Mueve el botón a la parte inferior */
+  right: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Apply:hover {
+  background-color: #ff784e; /* Color de fondo en hover */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+}
+
+
+/*Estilos para el footer*/
+footer {
+  background-color: #14854d; /* Color de fondo oscuro */
+  padding: 15px 0; /* Espaciado interno */
+  
+}
+
+.lfooter {
+  padding: 0 15px;
+  font-size: 30px;
+}
+/* Iconos redes sociales reflectantes */
+.Social-Net {
+  display: flex; /* Activa Flexbox */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items:center; /* Centra los elementos verticalmente */
+ 
+}
+
+.social{
+  text-align: left;
+  font-size: 35px;
+  color:rgb(255, 255, 255);
+  margin: 25px 40px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0px 0px 30px rgb(255, 255, 255);
+  transition: .3s ease;
+
+}
+.fa-twitter:hover{
+  background-color: #1DA1F2;
+  color: white;
+  box-shadow: 0 0 15px  #1DA1F2,
+              0 0 45px  #1DA1F2,
+              0 0 75px  #1DA1F2,
+              0 0 115px  #1DA1F2;
+}
+.fa-instagram:hover{
+  background-color: #ff00bf;
+  color: white;
+  box-shadow: 0 0 15px  #ff009d,
+              0 0 45px  #FF3E00,
+              0 0 75px  #FF3E00,
+              0 0 115px  #ff00f2;
+}
+.fa-tiktok:hover{
+  background-color: #000000;
+  color: white;
+  box-shadow: 0 0 15px  hsl(340, 100%, 50%),
+              0 0 45px  hsl(340, 100%, 50%),
+              0 0 75px  hsl(340, 100%, 50%),
+              0 0 115px  hsl(340, 100%, 50%);
+}
+.fa-envelope:hover{
+  background-color: #ff0000b7;
+  color: white;
+  box-shadow: 0 0 15px  hsl(0, 87%, 48%),
+              0 0 45px  hsl(0, 65%, 45%),
+              0 0 75px  hsl(0, 65%, 45%),
+              0 0 115px hsl(0, 65%, 45%);
+}
+
+.custom-close-button{
+  background-color: red;
+  border: none;
+}
+/* Recordar usar media queries para diseño en tablets moviles etc */

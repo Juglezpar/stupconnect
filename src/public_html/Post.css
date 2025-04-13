@@ -1,0 +1,101 @@
+body {
+  background-color: #d2dfee;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.containerHeader {
+  display: flex;
+  background-color: #020533;
+  padding: 20px 0px 25px 20px;
+  font-family: "Goblin One", sans-serif;
+}
+
+.WEBName {
+  font-weight: 800;
+  font-size: 35px;
+  color: #ffffff;
+  background-color: #020533;
+  border: none;
+  margin: 12px;
+  padding: 0px;
+  height: 42px;
+}
+
+.WEBName:hover {
+  color: #95a4c0;
+}
+h2 {
+  font-weight: 800;
+  font-size: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 18px;
+}
+
+/*Estilos para el formulario*/
+.Form {
+  display: flex;
+  justify-content: left;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.container {
+  background-color: #ffffff;
+  color: #1b1b1b;
+  max-width: 1000px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #020533;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #0f0d6b;
+}
+
+/*Selector de paises*/
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/*Botón de customers*/
+.customer-support-btn {
+  font-weight: 300;
+  position: fixed;
+  top: 28px;
+  right: 20px;
+  background-color: #ffffff;
+  color: #020533;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 13px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.customer-support-btn:hover {
+  background-color: #fdfdfd; /* Color de fondo al pasar el cursor */
+  transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+.custom-close-button {
+  background-color: red;
+  border: none;
+}

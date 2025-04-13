@@ -1,0 +1,137 @@
+/* Dispositivos pequeños (menos de 576px) */
+@media (max-width: 575.98px) {
+  .containerHeader {
+    background-color: #020533;
+    padding: 6px 0px 10px 2px;
+    font-family: "Goblin One", sans-serif;
+  }
+  .WEBName {
+    font-size: 11px;
+    border: none;
+    margin-top: 5px;
+    padding: 0px;
+    height: 41px;
+    margin-left: 0px;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 18px;
+    position: absolute;
+    left: 49%;
+    transform: translateX(-50%);
+    margin: 15px;
+  }
+  .customer-support-btn {
+    top: 18px;
+    right: 5px;
+    border-radius: 50px;
+    padding: 7px 2px;
+    font-size: 10px;
+  }
+  .about-us {
+    margin: 28px 10px 60px 10px;
+    padding: 15px;
+  }
+  /* Footer */
+  .Social-Net {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .social {
+    font-size: 20px;
+    margin: 5px 10px;
+  }
+}
+@media (min-width: 758px) and (max-width: 1040px) {
+  .containerHeader {
+    background-color: #020533;
+    padding: 22px 3px 23px 7px;
+    font-family: "Goblin One", sans-serif;
+  }
+
+  .WEBName {
+    font-size: 23px;
+    margin-top: 9px;
+    padding: 0px;
+    height: 49px;
+    margin-left: 11px;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 34px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px;
+  }
+
+  .customer-support-btn {
+    top: 32px;
+    right: 12px;
+    border-radius: 50px;
+    padding: 10px 9px;
+    font-size: 19px;
+  }
+  .about-us {
+    margin: 25px 44px 25px 44px;
+    padding: 15px;
+  }
+  /* Footer */
+  .Social-Net {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .social {
+    font-size: 25px;
+    margin: 7px 12px;
+  }
+}
+@media (min-width: 576px) and (max-width: 757px) {
+  .containerHeader {
+    background-color: #020533;
+    padding: 22px 3px 23px 7px;
+    font-family: "Goblin One", sans-serif;
+  }
+
+  .WEBName {
+    font-size: 17px;
+    margin-top: 7px;
+    padding: 0px;
+    height: 49px;
+    margin-left: 4px;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 27px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px;
+  }
+
+  .customer-support-btn {
+    top: 32px;
+    right: 5px;
+    border-radius: 50px;
+    padding: 10px 9px;
+    font-size: 15px;
+  }
+  .about-us {
+    margin: 25px 44px 25px 44px;
+    padding: 15px;
+  }
+  /* Footer */
+  .Social-Net {
+    flex-direction: row;
+    gap: 5px;
+  }
+  .social {
+    font-size: 25px;
+    margin: 7px 12px;
+  }
+  footer {
+    position: relative;
+    background-color: #020533;
+    padding: 18px 0;
+  }
+}
