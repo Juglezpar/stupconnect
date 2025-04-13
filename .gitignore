@@ -1,5 +1,5 @@
 # -----------------------------
-# Regiones de Node/JavaScript
+# Apartado para Node/javascript
 # -----------------------------
 
 # Logs
@@ -130,7 +130,7 @@ dist
 # Regiones específicas de PHP
 # -----------------------------
 
-# Dependencias instaladas por Composer
+# Dependencias instaladas por Composer (Excluye también dependencias para GoogleAuth)
 /vendor/
 composer.lock
 
@@ -149,3 +149,5 @@ composer.lock
 
 .DS_Store
 Thumbs.db
+#Archivos Sensibles
+Parametros.php
